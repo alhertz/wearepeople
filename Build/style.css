@@ -36,7 +36,17 @@ body {
   margin-top: 70px;
   background-image: url(assets/images/carousel/new-orleans.jpg);
   background-size: cover;
-  margin-bottom: 4.0em; }
+  margin-bottom: 4.0em;
+  color: #FFF;
+  padding-top: 250px; }
+  #hero .sub-title {
+    opacity: .7;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    #hero .sub-title span {
+      font-size: 12px;
+      text-transform: lowercase;
+      opacity: .5; }
 
 /* Chapters
 -------------------------------------------------- */
@@ -65,9 +75,10 @@ footer {
   background-image: url(assets/images/about-bg.png);
   background-size: cover;
   background-position: center center;
-  color: #FFF;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-  filter: dropshadow(color=rgba(0, 0, 0, 0.3), offx=0, offy=0); }
+  color: #FFF; }
+  footer p {
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    filter: dropshadow(color=rgba(0, 0, 0, 0.3), offx=0, offy=0); }
   footer a {
     color: #FFF; }
     footer a:hover {

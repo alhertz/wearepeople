@@ -55,9 +55,17 @@ body {
   background-image: url(new-orleans.jpg);
   background-size: cover;
   margin-bottom: 4.0em;
-  .content {
-    // display: table-cell;
-    // vertical-align: middle;
+  color: #FFF;
+  padding-top: 250px;
+  .sub-title {
+    opacity: .7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    span {
+      font-size: 12px;
+      text-transform: lowercase;
+      opacity: .5;
+    }
   }
 } 
 
@@ -93,7 +101,9 @@ footer {
   background-size: cover;
   background-position: center center;
   color: #FFF;
-  @include text-shadow;
+  p {
+    @include text-shadow;
+  }
   a {
     color: #FFF;
     &:hover {
