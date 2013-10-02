@@ -54,7 +54,6 @@ body {
   margin-top: 70px;
   background-image: url(new-orleans.jpg);
   background-size: cover;
-  margin-bottom: 4.0em;
   color: #FFF;
   padding-top: 250px;
   .sub-title {
@@ -72,7 +71,14 @@ body {
 /* Chapters
 -------------------------------------------------- */
 .chapters {
-  padding: 50px 0 100px 0;
+
+  padding: 0;
+  .col-md-4 {
+    padding: 0;
+  }
+  img {
+    width: 100%;
+  }
 }
 /* Social Channels
 -------------------------------------------------- */

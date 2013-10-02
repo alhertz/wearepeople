@@ -36,7 +36,6 @@ body {
   margin-top: 70px;
   background-image: url(assets/images/carousel/new-orleans.jpg);
   background-size: cover;
-  margin-bottom: 4.0em;
   color: #FFF;
   padding-top: 250px; }
   #hero .sub-title {
@@ -51,7 +50,11 @@ body {
 /* Chapters
 -------------------------------------------------- */
 .chapters {
-  padding: 50px 0 100px 0; }
+  padding: 0; }
+  .chapters .col-md-4 {
+    padding: 0; }
+  .chapters img {
+    width: 100%; }
 
 /* Social Channels
 -------------------------------------------------- */
