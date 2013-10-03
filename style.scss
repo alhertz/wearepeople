@@ -89,12 +89,14 @@ body {
     }
   }
 } 
+// Desktop Caption Display
 @media screen and (min-width: 768px) {
   .carousel-caption {
     top: 25%;
     right: 10%;
   }
 }
+// Mobile / Tablet Caption Display - Still Needs Work
 @media screen and (max-width: 768px) {
   #carousel {
     height: 340px !important;
@@ -108,6 +110,9 @@ body {
       img {
         max-width: 100%;
         height: auto;
+        &:hover {
+          opacity: .5;
+        }
       }
     }
   }

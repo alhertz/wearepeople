@@ -78,7 +78,9 @@ body {
       margin: 20px auto 0 auto; }
       #carousel .carousel-caption img {
         max-width: 100%;
-        height: auto; } }
+        height: auto; }
+        #carousel .carousel-caption img:hover {
+          opacity: .5; } }
 /* Chapters
 -------------------------------------------------- */
 .chapters {
