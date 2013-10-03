@@ -1,10 +1,12 @@
 /* Mixins and Variables 
 -------------------------------------------------- */
+/* Setup Variable for Navbar Height for Help with position w/ scrollspy */
 /* Global Styles
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 body {
-  color: #5a5a5a; }
+  color: #5a5a5a;
+  margin-top: 80px; }
 
 /* Navigation
 -------------------------------------------------- */
@@ -33,11 +35,11 @@ body {
 /* Homepage Hero
 -------------------------------------------------- */
 #hero {
-  margin-top: 70px;
   background-image: url(assets/images/carousel/new-orleans.jpg);
   background-size: cover;
   color: #FFF;
-  padding-top: 250px; }
+  padding-top: 250px;
+  margin-bottom: -80px; }
   #hero .sub-title {
     opacity: .7;
     text-transform: uppercase;
@@ -50,7 +52,7 @@ body {
 /* Chapters
 -------------------------------------------------- */
 .chapters {
-  padding: 0; }
+  padding: 80px 0 0 0; }
   .chapters .col-md-4 {
     padding: 0; }
   .chapters img {

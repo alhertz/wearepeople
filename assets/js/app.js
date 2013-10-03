@@ -39,5 +39,13 @@ $(function() {
       template: '<a href="{{link}}" class="thumbnail"><img src="{{image}}" /></a> <br /> <p>{{caption}}'
   });
   userFeed.run()
-});
+
+  //Tumblr Feed
+  $('#tumblr')
+    .tumblr({
+        url:        'http://blog.wearepeople.co',
+        pagination: '#pagination',
+        loading:    '#loading'
+    });
+  });
 

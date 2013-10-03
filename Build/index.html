@@ -22,10 +22,10 @@
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body data-spy="scroll" data-target="#nav">
-    <div class="navbar-wrapper" id="nav">
+  <body data-spy="scroll" data-target="#navbar">
+    <div class="navbar-wrapper">
       <div class="container">
-        <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar navbar-default navbar-fixed-top" id="navbar">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -42,9 +42,7 @@
                 <li><a href="#about" data-target="#about">About</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://www.vimeo.com">Vimeo</a></li>
-                <li><a href="http://www.twitter.com">Twitter</a></li>
-                <li><a href="http://www.facebook.com">Facebook</a></li>
+                <li><iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.wearepeople.co&amp;width=100&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=576874092373872" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:62px;" allowTransparency="true"></iframe></li>
               </ul>
             </div>
           </div>
@@ -62,8 +60,8 @@
   </div>
 </section>
 
-<section class="chapters">
-  <div id="chapters">
+<section id="chapters">
+  <div class="chapters">
     <div class="row">
       <div class="col-md-4"><img src="assets/images/chapters/we-are-dreams.jpg"/></div>
       <div class="col-md-4"><img src="assets/images/chapters/we-are-regret.jpg"/></div>
@@ -90,8 +88,7 @@
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <h2><i class="icon-tumblr"></i><br /> Tumblr</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        <div id="tumblr">Loading...</div>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
   </div>
@@ -120,6 +117,7 @@
     <script src='assets/js/bootstrap.min.js'></script>
     <script src='assets/js/holder.js'></script>
     <script src='assets/js/instafeed.js'></script>
+    <script src='assets/js/jquery.tumblr.js'></script>
     <script src='assets/js/app.js'></script>
 
   </body>
