@@ -58,6 +58,14 @@ body {
   color: #FFF;
   padding-top: 250px;
   margin-bottom: -$navbar-height;
+  .btn-default {
+    background: transparent;
+    color: #FFF;
+    border-radius: 2px;
+    &:hover {
+      color: #CCC;
+    }
+  }
   .sub-title {
     opacity: .7;
     text-transform: uppercase;
@@ -76,6 +84,7 @@ body {
   padding: 80px 0 0 0;
   .col-md-4 {
     padding: 0;
+    margin-bottom: -2px;
   }
   img {
     width: 100%;
@@ -96,6 +105,19 @@ body {
   }
   a.thumbnail:hover {
     border-color: #CCC;
+  }
+  .tumblr {
+    .description {
+      margin-top: 1.0em;
+    }
+  }
+  .instagram {
+    img {
+      max-width: 100%;
+    }
+    .description {
+      margin-top: 1.0em;
+    }
   }
 }
 

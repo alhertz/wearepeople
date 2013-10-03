@@ -36,16 +36,14 @@ $(function() {
       limit: '1',
     	resolution: 'standard_resolution',
       accessToken: '413142560.467ede5.e99050ac387c49fdadd4172f7cf8c8be',
-      template: '<a href="{{link}}" class="thumbnail"><img src="{{image}}" /></a> <br /> <p>{{caption}}'
+      template: '<div class="panel instagram"> <div class="panel-body"><a href="{{link}}"><img src="{{image}}" /></a>  <p class="description">{{caption}}</p></div></div>'
   });
   userFeed.run()
 
   //Tumblr Feed
   $('#tumblr')
     .tumblr({
-        url:        'http://blog.wearepeople.co',
-        pagination: '#pagination',
-        loading:    '#loading'
+      url:'http://blog.wearepeople.co',
     });
   });
 
