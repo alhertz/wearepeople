@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>We Are People</title>
 
     <!-- Bootstrap core CSS -->
     <link rel='stylesheet' href='assets/css/bootstrap.css'>
     <link rel='stylesheet' href='style.css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
-    <div class="navbar-wrapper" id="nav">
+  <body data-spy="scroll" data-target="#navbar">
+    <div class="navbar-wrapper">
       <div class="container">
-
-        <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar navbar-default navbar-fixed-top" id="navbar">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,14 +37,12 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="#top" class="smooth">Home</a></li>
-                <li><a href="#episodes" class="smooth">Episodes</a></li>
-                <li><a href="#about" class="smooth">About</a></li>
+                <li><a href="#hero" data-target="#hero">Home</a></li>
+                <li><a href="#chapters" data-target="#chapters">Chapters</a></li>
+                <li><a href="#about" data-target="#about">About</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://www.vimeo.com">Vimeo</a></li>
-                <li><a href="http://www.twitter.com">Twitter</a></li>
-                <li><a href="http://www.facebook.com">Facebook</a></li>
+                <li><a href="#">Facebook Like Button</a></li>
               </ul>
             </div>
           </div>
@@ -52,141 +50,91 @@
       </div>
     </div>
 
-<!-- Carousel
-================================================== -->
-<div id="myCarousel" class="carousel slide">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Example headline.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
+<section class="hero">
+  <div id="carousel" class="carousel slide">
+      <!-- <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+      </ol> -->
+      <div class="carousel-inner">
+        <div class="item active" style="background: url(assets/images/carousel/new-orleans.jpg) ">
+          <img src="assets/images/carousel/new-orleans.jpg" alt="First slide">
+          <div class="carousel-caption">
+            <div class="col-md-5 col-md-offset-7 text-center">
+              <p class="text-center"><img src="assets/images/chapters/we-are-dreams-title.png"/></p>
+              <p class="sub-title text-center"> Five Days <span>x</span> 50 People <span>x</span> 120 FPS </p>
+              <a class="btn btn-default" href="/wearedreams.html">Watch "We Are Dreams"</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/about-bg.png" alt="Second slide">
         </div>
       </div>
+      <a class="left carousel-control" href="#carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+</section>
+
+<section id="chapters">
+  <div class="chapters">
+    <div class="row">
+      <div class="col-md-4"><img src="assets/images/chapters/we-are-dreams.jpg"/></div>
+      <div class="col-md-4"><img src="assets/images/chapters/we-are-regret.jpg"/></div>
+      <div class="col-md-4"><img src="assets/images/chapters/we-are-dreams.jpg"/></div>
+      <div class="col-md-4"><img src="assets/images/chapters/we-are-dreams.jpg"/></div>
+      <div class="col-md-4"><img src="assets/images/chapters/we-are-regret.jpg"/></div>
+      <div class="col-md-4"><img src="assets/images/chapters/we-are-dreams.jpg"/></div>
     </div>
-    <div class="item">
-      <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+  </div>
+</section>
+
+<section class="social">
+  <div id="social" class="container">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <h2><i class="icon-twitter"></i><br /> Twitter</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <h2><i class="icon-instagram"></i><br /> Instagram</h2>
+        <div id="instafeed">Loading...</div> 
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <h2><i class="icon-tumblr"></i><br /> Tumblr</h2>
+        <div id="tumblr">Loading...</div>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container" id="about">
+        <div class="row text-center">
+          <div class="col-md-offset-3 col-md-6">
+            <img src="assets/images/logo-white.png" width="200px"/>
+            <p class="lead">
+              We Are People is an on-going film & photography project, divided into chapters. These chapters explore the things that connect us as people. Inside are our stories.
+            </p>
+            <a class="btn btn-default">Share Your Story</a>
+          </div>
+        </div>
+        <div class="colophon">
+          <p class="pull-right"><a href="#top" class="smooth">Back to top</a></p>
+          <p>&copy; 2013 We Are People.</p>
         </div>
       </div>
-    </div>
-    <div class="item">
-      <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>One more for good measure.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div><!-- /.carousel -->
-
-
-
-<!-- Marketing messaging and featurettes
-================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
-
-<div class="container marketing">
-
-  <!-- Three columns of text below the carousel -->
-  <div class="row">
-    <div class="col-lg-4">
-      <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-      <h2>Heading</h2>
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-      <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-  </div><!-- /.row -->
-
-
-  <!-- Begin Featurettes -->
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette" id="about">
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-    </div>
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-
-  <div class="row featurette" id="episodes">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-    </div>
-  </div>
-
-  <hr class="featurette-divider">
-  <!-- End Featurettes -->
-
-  <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#top" class="smooth">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    </footer>
 
     <script src='assets/js/jquery.js'></script>
     <script src='assets/js/bootstrap.min.js'></script>
     <script src='assets/js/holder.js'></script>
+    <script src='assets/js/instafeed.js'></script>
+    <script src='assets/js/jquery.tumblr.js'></script>
     <script src='assets/js/app.js'></script>
-    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.3/jquery.scrollTo.min.js"></script>-->
 
   </body>
 </html>

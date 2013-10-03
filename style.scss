@@ -1,129 +1,185 @@
-/* GLOBAL STYLES
+/* Mixins and Variables 
+-------------------------------------------------- */
+@mixin text-shadow {
+  text-shadow: 0px 0px 3px rgba(0,0,0,.3);
+  filter: dropshadow(color=rgba(0,0,0,.3), offx=0, offy=0);
+}
+/* Setup Variable for Navbar Height for Help with position w/ scrollspy */
+$navbar-height: 90px;
+
+/* Global Styles
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
+  padding-top: $navbar-height;
 }
 
-
-
-/* CUSTOMIZE THE NAVBAR
+/* Navigation
 -------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  position: relative;
-  z-index: 15;
-
+  .navbar {
+    border-radius: 0;
+    background: #FFF;
+  }
+  .navbar-brand {
+    background-image: url(logo.png);
+    background-size: 80px auto;
+    background-repeat: no-repeat;
+    background-position: center right;
+    text-indent: -9999px;
+    line-height: 60px;
+    margin-right: 40px;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  .navbar-nav > li > a {
+    line-height: 60px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    // padding-top: 1.0em;
+  }
+  .navbar-default .navbar-nav > .active > a {
+    color: #222;
+    // border-bottom: 5px solid #222;
+    background: #FFF;
+    font-weight: bold;
+  }
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
+/* Homepage Hero
 -------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 60px;
-
-  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-  margin-top: -90px;
+.hero {
+  color: #FFF;
+  margin-bottom: -$navbar-height;
+  #carousel {
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .btn-default {
+    background: transparent;
+    color: #FFF;
+    border-radius: 2px;
+    &:hover {
+      color: #CCC;
+    }
+  }
+  .sub-title {
+    opacity: .7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    span {
+      font-size: 12px;
+      text-transform: lowercase;
+      opacity: .5;
+    }
+  }
+} 
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+    top: 25%;
+    right: 10%;
+  }
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
+@media screen and (max-width: 768px) {
+  #carousel {
+    height: 340px !important;
+    img {
+      height: 340px;
+    }
+    .carousel-caption {
+      width: 50%;
+      top: 0;
+      margin: 20px auto 0 auto;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-}
-
-
-
-/* MARKETING CONTENT
+/* Chapters
 -------------------------------------------------- */
-
-/* Pad the edges of the mobile views a bit */
-.marketing {
-  padding-left: 15px;
-  padding-right: 15px;
+.chapters {
+  padding: $navbar-height 0 0 0;
+  .col-md-4 {
+    padding: 0;
+    margin-bottom: -2px;
+  }
+  img {
+    width: 100%;
+  }
 }
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-
-
-/* RESPONSIVE CSS
+/* Social Channels
 -------------------------------------------------- */
+.social {
+  background: #f5f5f5;
+  padding: 100px 0;
+  h2 {
+    color: #CCC;
+    text-align: center;
+    margin-bottom: 2.0em;
+    i {
+      font-size: 1.0em;
+    }
+  }
+  a.thumbnail:hover {
+    border-color: #CCC;
+  }
+  .tumblr {
+    .description {
+      margin-top: 1.0em;
+    }
+  }
+  .instagram {
+    img {
+      max-width: 100%;
+    }
+    .description {
+      margin-top: 1.0em;
+    }
+  }
+}
 
+/* Footer
+-------------------------------------------------- */
+footer {
+  background: #222;
+  padding: 4.0em 0;
+  background-image: url(about-bg.png);
+  background-size: cover;
+  background-position: center center;
+  color: #FFF;
+  p {
+    @include text-shadow;
+  }
+  a {
+    color: #FFF;
+    &:hover {
+      color: #E5E5E5;
+      text-decoration: none;
+    }
+  }
+  .row {
+    margin: 4.0em 0;
+    img {
+      margin-bottom: 2.0em;
+    }
+  }
+  .colophon {
+    opacity: .5;
+  }
+}
+
+/* Responsive CSS
+-------------------------------------------------- */
 @media (min-width: 768px) {
-
-  /* Remove the edge padding needed for mobile */
-  .marketing {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
 }

@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <link rel="shortcut icon" href="<!-- @path favicon.png -->">
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>We Are People</title>
 
     <!-- Bootstrap core CSS -->
     <!-- @stylesheet bootstrap -->
     <!-- @stylesheet style -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
-    <div class="navbar-wrapper" id="nav">
+  <body data-spy="scroll" data-target="#navbar">
+    <div class="navbar-wrapper">
       <div class="container">
-
-        <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar navbar-default navbar-fixed-top" id="navbar">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,14 +37,12 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="#top" class="smooth">Home</a></li>
-                <li><a href="#episodes" class="smooth">Episodes</a></li>
-                <li><a href="#about" class="smooth">About</a></li>
+                <li><a href="#hero" data-target="#hero">Home</a></li>
+                <li><a href="#chapters" data-target="#chapters">Chapters</a></li>
+                <li><a href="#about" data-target="#about">About</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://www.vimeo.com">Vimeo</a></li>
-                <li><a href="http://www.twitter.com">Twitter</a></li>
-                <li><a href="http://www.facebook.com">Facebook</a></li>
+                <li><a href="#">Facebook Like Button</a></li>
               </ul>
             </div>
           </div>
