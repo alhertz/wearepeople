@@ -15,9 +15,9 @@ $(function() {
   //   }
   // });
   // Full height hero 
-  $('#carousel').css({'height':(($(window).height())-91)+'px'});
+  $('#carousel, .hero iframe').css({'height':(($(window).height())-91)+'px'});
   $(window).resize(function(){
-  	$('#carousel').css({'height':(($(window).height())-91)+'px'});
+  	$('#carousel, .hero iframe').css({'height':(($(window).height())-91)+'px'});
   });
   $(window).scroll(function() {    
 	  var scroll = $(window).scrollTop();

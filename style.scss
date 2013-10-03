@@ -147,20 +147,29 @@ body {
     border-color: #CCC;
   }
   .tumblr {
+    img {
+      width: 100%;
+    }
     .description {
       margin-top: 1.0em;
     }
   }
   .instagram {
     img {
-      max-width: 100%;
+      width: 100%;
     }
     .description {
       margin-top: 1.0em;
     }
   }
 }
-
+/* Single Chapter View
+-------------------------------------------------- */
+.single-chapter-view.hero {
+  iframe {
+    width: 100%;
+  }
+}
 /* Footer
 -------------------------------------------------- */
 footer {

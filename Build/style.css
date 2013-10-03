@@ -104,12 +104,19 @@ body {
       font-size: 1.0em; }
   .social a.thumbnail:hover {
     border-color: #CCC; }
+  .social .tumblr img {
+    width: 100%; }
   .social .tumblr .description {
     margin-top: 1.0em; }
   .social .instagram img {
-    max-width: 100%; }
+    width: 100%; }
   .social .instagram .description {
     margin-top: 1.0em; }
+
+/* Single Chapter View
+-------------------------------------------------- */
+.single-chapter-view.hero iframe {
+  width: 100%; }
 
 /* Footer
 -------------------------------------------------- */
