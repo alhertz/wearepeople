@@ -5,7 +5,7 @@
   filter: dropshadow(color=rgba(0,0,0,.3), offx=0, offy=0);
 }
 /* Setup Variable for Navbar Height for Help with position w/ scrollspy */
-$navbar-height: 80px;
+$navbar-height: 90px;
 
 /* Global Styles
 -------------------------------------------------- */
@@ -13,7 +13,7 @@ $navbar-height: 80px;
 
 body {
   color: #5a5a5a;
-  margin-top: $navbar-height;
+  padding-top: $navbar-height;
 }
 
 /* Navigation
@@ -51,13 +51,12 @@ body {
 
 /* Homepage Hero
 -------------------------------------------------- */
-
-#hero {
-  background-image: url(new-orleans.jpg);
-  background-size: cover;
+.hero {
   color: #FFF;
-  padding-top: 250px;
   margin-bottom: -$navbar-height;
+  #carousel {
+    overflow: hidden;
+  }
   .btn-default {
     background: transparent;
     color: #FFF;
@@ -81,7 +80,7 @@ body {
 /* Chapters
 -------------------------------------------------- */
 .chapters {
-  padding: 80px 0 0 0;
+  padding: $navbar-height 0 0 0;
   .col-md-4 {
     padding: 0;
     margin-bottom: -2px;

@@ -1,13 +1,23 @@
 <!-- @include _header.html -->
 
-<section id="hero">
-  <div class="row">
-    <div class="col-md-5 col-md-offset-7 text-center">
-      <p class="text-center"><img src="<!-- @path we-are-dreams-title.png -->"/></p>
-      <p class="sub-title text-center"> Five Days <span>x</span> 50 People <span>x</span> 120 FPS </p>
-      <a class="btn btn-default" href="/wearedreams.html">Watch "We Are Dreams"</a>
-    </div>
-  </div>
+<section class="hero">
+  <div id="carousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="<!-- @path new-orleans.jpg -->" alt="First slide">
+        </div>
+        <div class="item">
+          <img src="<!-- @path about-bg.png -->" alt="Second slide">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 </section>
 
 <section id="chapters">

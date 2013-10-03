@@ -1,23 +1,23 @@
 // Smooth Scroll Links
 $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
+  // $('a[href*=#]:not([href=#])').click(function() {
+  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+  //       || location.hostname == this.hostname) {
 
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
+  //     var target = $(this.hash);
+  //     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  //     if (target.length) {
+  //       $('html,body').animate({
+  //         scrollTop: target.offset().top
+  //       }, 1000);
+  //       return false;
+  //     }
+  //   }
+  // });
   // Full height hero 
-  $('#hero').css({'height':(($(window).height())-0)+'px'});
+  $('#carousel').css({'height':(($(window).height())-91)+'px'});
   $(window).resize(function(){
-  	$('#hero').css({'height':(($(window).height())-0)+'px'});
+  	$('#carousel').css({'height':(($(window).height())-91)+'px'});
   });
   $(window).scroll(function() {    
 	  var scroll = $(window).scrollTop();

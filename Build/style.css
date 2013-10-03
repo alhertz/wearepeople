@@ -6,7 +6,7 @@
 /* Padding below the footer and lighter body text */
 body {
   color: #5a5a5a;
-  margin-top: 80px; }
+  padding-top: 90px; }
 
 /* Navigation
 -------------------------------------------------- */
@@ -34,23 +34,22 @@ body {
 
 /* Homepage Hero
 -------------------------------------------------- */
-#hero {
-  background-image: url(assets/images/carousel/new-orleans.jpg);
-  background-size: cover;
+.hero {
   color: #FFF;
-  padding-top: 250px;
-  margin-bottom: -80px; }
-  #hero .btn-default {
+  margin-bottom: -90px; }
+  .hero #carousel {
+    overflow: hidden; }
+  .hero .btn-default {
     background: transparent;
     color: #FFF;
     border-radius: 2px; }
-    #hero .btn-default:hover {
+    .hero .btn-default:hover {
       color: #CCC; }
-  #hero .sub-title {
+  .hero .sub-title {
     opacity: .7;
     text-transform: uppercase;
     letter-spacing: 1px; }
-    #hero .sub-title span {
+    .hero .sub-title span {
       font-size: 12px;
       text-transform: lowercase;
       opacity: .5; }
@@ -58,7 +57,7 @@ body {
 /* Chapters
 -------------------------------------------------- */
 .chapters {
-  padding: 80px 0 0 0; }
+  padding: 90px 0 0 0; }
   .chapters .col-md-4 {
     padding: 0;
     margin-bottom: -2px; }
