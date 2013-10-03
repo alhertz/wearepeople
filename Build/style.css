@@ -39,6 +39,8 @@ body {
   margin-bottom: -90px; }
   .hero #carousel {
     overflow: hidden; }
+    .hero #carousel img {
+      width: 100%; }
   .hero .btn-default {
     background: transparent;
     color: #FFF;
@@ -54,6 +56,10 @@ body {
       text-transform: lowercase;
       opacity: .5; }
 
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+    top: 25%;
+    right: 10%; } }
 /* Chapters
 -------------------------------------------------- */
 .chapters {

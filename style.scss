@@ -56,6 +56,9 @@ body {
   margin-bottom: -$navbar-height;
   #carousel {
     overflow: hidden;
+    img {
+      width: 100%;
+    }
   }
   .btn-default {
     background: transparent;
@@ -76,6 +79,12 @@ body {
     }
   }
 } 
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+    top: 25%;
+    right: 10%;
+  }
+}
 
 /* Chapters
 -------------------------------------------------- */
