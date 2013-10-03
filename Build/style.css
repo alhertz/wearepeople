@@ -60,6 +60,18 @@ body {
   .carousel-caption {
     top: 25%;
     right: 10%; } }
+@media screen and (max-width: 768px) {
+  #carousel {
+    height: 340px !important; }
+    #carousel img {
+      height: 340px; }
+    #carousel .carousel-caption {
+      width: 50%;
+      top: 0;
+      margin: 20px auto 0 auto; }
+      #carousel .carousel-caption img {
+        max-width: 100%;
+        height: auto; } }
 /* Chapters
 -------------------------------------------------- */
 .chapters {

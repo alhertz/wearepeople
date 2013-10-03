@@ -85,6 +85,23 @@ body {
     right: 10%;
   }
 }
+@media screen and (max-width: 768px) {
+  #carousel {
+    height: 340px !important;
+    img {
+      height: 340px;
+    }
+    .carousel-caption {
+      width: 50%;
+      top: 0;
+      margin: 20px auto 0 auto;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
 
 /* Chapters
 -------------------------------------------------- */
