@@ -4,6 +4,13 @@
   text-shadow: 0px 0px 3px rgba(0,0,0,.3);
   filter: dropshadow(color=rgba(0,0,0,.3), offx=0, offy=0);
 }
+@mixin smooth-trans($property: all, $time: 1000ms, $function: ease) {
+  -webkit-transition: $property $time $function;
+     -moz-transition: $property $time $function;
+      -ms-transition: $property $time $function;
+       -o-transition: $property $time $function;
+          transition: $property $time $function;
+}
 /* Setup Variable for Navbar Height for Help with position w/ scrollspy */
 $navbar-height: 90px;
 
@@ -14,6 +21,9 @@ $navbar-height: 90px;
 body {
   color: #5a5a5a;
   padding-top: $navbar-height;
+}
+:hover {
+  @include smooth-trans;
 }
 
 /* Navigation
