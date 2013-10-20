@@ -49,3 +49,22 @@ $(function() {
     });
   });
 
+  // var container = document.querySelector('#container');
+  // var msnry;
+  // // initialize Masonry after all images have loaded
+  // imagesLoaded( container, function() {
+  //   msnry = new Masonry( container, {
+  //     // options
+  //     columnWidth: 200,
+  //     itemSelector: '.item'
+  //   }); 
+  // });
+
+
+  // or with jQuery
+  // initialize Masonry
+  var $container = $('#container').masonry();
+  // layout Masonry again after all images have loaded
+  $container.imagesLoaded( function() {
+    $container.masonry();
+  });
