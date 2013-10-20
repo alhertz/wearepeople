@@ -29,10 +29,10 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: $font-family;
-  font-weight: 900;
+  font-weight: 600;
 }
 :hover {
-  @include smooth-trans;
+  // @include smooth-trans;
 }
 
 /* Navigation
@@ -139,7 +139,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
   }
   .chapter {
-    color: #FFF;
+    color: #EEE;
     text-align: center;
     .chapter-details {
       display: none; /* Hide details by default */
@@ -147,7 +147,17 @@ h1,h2,h3,h4,h5,h6 {
       top: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,.7);
+      background: rgba(0,0,0,.8);
+      padding-top: 18%;
+      .chapter-play {
+        color: #FFF;
+        font-size: 3.0em;
+        padding-bottom: .5em;
+        display: inline-block;
+        &:hover {
+          color: #999;
+        }
+      }
       .chapter-number {
         margin: 0;
         font-size: .95em;
@@ -157,10 +167,15 @@ h1,h2,h3,h4,h5,h6 {
       }
       .chapter-name {
         text-transform: uppercase;
-        margin: .5em 0 0 0;
+        margin: .125em 0 0 0;
+        font-size: 2.0em;
+        letter-spacing: 1px;
       }
       .chapter-location {
+        font-size: .95em;
         text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #999;
       }
     }
   }

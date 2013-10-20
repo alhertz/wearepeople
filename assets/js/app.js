@@ -32,10 +32,10 @@ $(function() {
   // Chapter Text Reveal on Hover
   $('.chapter').hover(
     function () {
-      $('.chapter-details').show();
+      $('.chapter-details').fadeIn('fast');
     }, 
     function () {
-      $('.chapter-details').hide();
+      $('.chapter-details').fadeOut('fast');
     }
   );
 
