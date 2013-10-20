@@ -30,12 +30,11 @@ $(function() {
 	});
 
   // Chapter Text Reveal on Hover
-  $('.chapter').hover(
-    function () {
-      $('.chapter-details').fadeIn('fast');
-    }, 
-    function () {
-      $('.chapter-details').fadeOut('fast');
+  $(".chapter").hover(
+    function() {
+      $(this).find(".chapter-details").fadeIn('fast');
+    }, function() {
+      $(this).find(".chapter-details").fadeOut('fast');
     }
   );
 
