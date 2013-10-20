@@ -29,14 +29,24 @@ $(function() {
 	  }
 	});
 
+  // Chapter Text Reveal on Hover
+  $('.chapter').hover(
+    function () {
+      $('.chapter-details').show();
+    }, 
+    function () {
+      $('.chapter-details').hide();
+    }
+  );
+
   // Instagram feed
 	var userFeed = new Instafeed({
-      get: 'user',
-      userId: 413142560,
-      limit: '1',
-    	resolution: 'standard_resolution',
-      accessToken: '413142560.467ede5.e99050ac387c49fdadd4172f7cf8c8be',
-      template: '<div class="panel instagram"> <div class="panel-body"><a href="{{link}}"><img src="{{image}}" /></a>  <p class="description">{{caption}}</p></div></div>'
+    get: 'user',
+    userId: 413142560,
+    limit: '1',
+  	resolution: 'standard_resolution',
+    accessToken: '413142560.467ede5.e99050ac387c49fdadd4172f7cf8c8be',
+    template: '<div class="panel instagram"> <div class="panel-body"><a href="{{link}}"><img src="{{image}}" /></a>  <p class="description">{{caption}}</p></div></div>'
   });
   userFeed.run()
 

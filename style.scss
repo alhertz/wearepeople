@@ -14,6 +14,10 @@
 /* Setup Variable for Navbar Height for Help with position w/ scrollspy */
 $navbar-height: 90px;
 
+/* Other Variables */
+$font-family: "Proxima-Nova", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+$grey: #999;
+
 /* Global Styles
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -21,6 +25,11 @@ $navbar-height: 90px;
 body {
   color: #5a5a5a;
   padding-top: $navbar-height;
+  font-family: $font-family;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-family;
+  font-weight: 900;
 }
 :hover {
   @include smooth-trans;
@@ -128,6 +137,32 @@ body {
   }
   img {
     width: 100%;
+  }
+  .chapter {
+    color: #FFF;
+    text-align: center;
+    .chapter-details {
+      display: none; /* Hide details by default */
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,.7);
+      .chapter-number {
+        margin: 0;
+        font-size: .95em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #999;
+      }
+      .chapter-name {
+        text-transform: uppercase;
+        margin: .5em 0 0 0;
+      }
+      .chapter-location {
+        text-transform: uppercase;
+      }
+    }
   }
 }
 /* Social Channels
