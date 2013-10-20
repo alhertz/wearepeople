@@ -1,5 +1,6 @@
-// Smooth Scroll Links
+
 $(function() {
+  // Smooth Scroll Links
   // $('a[href*=#]:not([href=#])').click(function() {
   //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
   //       || location.hostname == this.hostname) {
@@ -14,20 +15,12 @@ $(function() {
   //     }
   //   }
   // });
+
   // Full height hero 
   $('#carousel, .hero iframe').css({'height':(($(window).height())-91)+'px'});
   $(window).resize(function(){
   	$('#carousel, .hero iframe').css({'height':(($(window).height())-91)+'px'});
   });
-  $(window).scroll(function() {    
-	  var scroll = $(window).scrollTop();
-
-	  if (scroll >= 20) {
-	      $(".navbar-inner").addClass("dark");
-	  } else {
-	      $(".navbar-inner").removeClass("dark");
-	  }
-	});
 
   // Chapter Text Reveal on Hover
   $(".chapter").hover(

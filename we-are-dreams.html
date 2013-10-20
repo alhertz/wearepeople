@@ -1,40 +1,114 @@
 <!-- @include _header.html -->
 
-<section class="hero chapter-view">
+<section class="chapter-video hero">
 	<iframe src="//player.vimeo.com/video/24970713?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="233" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </section>
 
-<section class="response-form">
-  <div class="form">
-    <div class="row">
-    	<div class="col-md-4">
-    		<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#video">
+<section class="chapter-response">
+  <div class="row">
+  	<div class="container">
+	  	<div class="col-md-4">
+	  		<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#video-response">
 				  Submit A Video
 				</button>
 			</div>
 			<div class="col-md-4">
-    		<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#photo">
+	  		<button type="button " class="btn btn-default btn-block" data-toggle="collapse" data-target="#photo-response">
 				  Submit A Photo
 				</button>
 			</div>
 			<div class="col-md-4">
-    		<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#comment">
+	  		<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#comment-response">
 				  Submit A Comment
 				</button>
 			</div>
 		</div>
 	</div>
+
+	<div id="video-response" class="collapse fields">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-5">
+					<h3>Share Your Story In Moving Pictures</h3>
+				</div>
+				<div class="col-md-7">
+					<form class="form-inline" role="form">
+					  <div class="form-group">
+					    <label class="sr-only" for="name">Your Name</label>
+					    <input type="email" class="form-control" id="url" placeholder="Your Name">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="email">Email address</label>
+					    <input type="email" class="form-control" id="url" placeholder="Email Address">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="url">Video URL</label>
+					    <input type="email" class="form-control" id="url" placeholder="Video URL">
+					  </div>
+					  <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="photo-response" class="collapse fields">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-5">
+					<h3>Snap a picture, post it here.</h3>
+				</div>
+				<div class="col-md-7">
+					<form class="form-inline" role="form">
+					  <div class="form-group">
+					    <label class="sr-only" for="name">Your Name</label>
+					    <input type="email" class="form-control" id="url" placeholder="Your Name">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="email">Email address</label>
+					    <input type="email" class="form-control" id="url" placeholder="Email Address">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="url">Video URL</label>
+					    <input type="email" class="form-control" id="url" placeholder="Video URL">
+					  </div>
+					  <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="comment-response" class="collapse fields">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-5">
+					<h3>Say Something. Anything.</h3>
+				</div>
+				<div class="col-md-7">
+					<form class="form-inline" role="form">
+					  <div class="form-group">
+					    <label class="sr-only" for="name">Your Name</label>
+					    <input type="text" class="form-control" id="url" placeholder="Your Name">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="email">Email address</label>
+					    <input type="email" class="form-control" id="url" placeholder="Email Address">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="url">What Keeps You Up At Night?</label>
+					    <input type="comment" class="form-control" id="comment" placeholder="What Keeps You Up?">
+					  </div>
+					  <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </section>
 
-<section class="reponse-grid">
-  <div class="responses">
-    <div class="response"><img src="..."/></div>
-  </div>
+<section class="chapter-reponses">
+   <div class="chapter-response"></div>
 </section>
 
-
-<div id="video" class="collapse">Video Form</div>
-<div id="photo" class="collapse">Photo Form</div>
-<div id="comment" class="collapse">Comment Form</div>
 
 <!-- @include _footer.html -->

@@ -215,9 +215,45 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* Single Chapter View
 -------------------------------------------------- */
-.single-chapter-view.hero {
+.chapter-video.hero {
   iframe {
     width: 100%;
+  }
+  margin-bottom: 0;
+}
+.chapter-response {
+  .row {
+    min-height: 4.0em;
+    border-bottom: 5px solid #ccc;
+    .col-md-4 {
+      padding: 0;
+    }
+    .btn-block {
+      height: 4.0em;
+      border-radius: 0;
+      border: none;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #222;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      &:hover {
+        background: transparent;
+        color: #555;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        background: transparent;
+      }
+    }
+  }
+  .fields {
+    background: #CCC;
+    form {
+      padding-top: 1.0em;
+      margin-bottom: 1.0em;
+    }
   }
 }
 /* Footer
