@@ -2,17 +2,14 @@ $(function(){
   
   var $container = $('#chapter-responses'),
       $checkboxes = $('#filters input');
-  
-  // $container.isotope({
-  //   itemSelector: '.item',
-  // });
 
   $container.imagesLoaded( function(){
     $container.isotope({
-      itemSelector: '.item',
-      masonry: {
-        columnWidth: 1
-      }
+      itemSelector: '.chapter-response',
+      // masonry: {
+      //   columnWidth: 1
+      // }
+      layoutMode : 'fitRows'
     });
   });
   
@@ -26,15 +23,10 @@ $(function(){
     filters = filters.join(', ');
     $container.isotope({ filter: filters });
   });
-    
-  $('#shuffle').click(function(){
-    $container.isotope('shuffle');
-  });
-  
+
 });
 
 $(function() {
-
   // Full height hero 
   $('#carousel, .hero iframe').css({'height':(($(window).height())-91)+'px'});
   $(window).resize(function(){
@@ -66,24 +58,5 @@ $(function() {
   .tumblr({
     url:'http://blog.wearepeople.co',
   });
+
 });
-
-  // Masonry Stuff
-  // var container = document.querySelector('#container');
-  // var msnry;
-  // // initialize Masonry after all images have loaded
-  // imagesLoaded( container, function() {
-  //   msnry = new Masonry( container, {
-  //     // options
-  //     columnWidth: 200,
-  //     itemSelector: '.item'
-  //   }); 
-  // });
-
-  // or with jQuery
-  // initialize Masonry
-  // var $container = $('#container').masonry();
-  // // layout Masonry again after all images have loaded
-  // $container.imagesLoaded( function() {
-  //   $container.masonry();
-  // });
