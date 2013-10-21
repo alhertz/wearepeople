@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>We Are People</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel='stylesheet' href='assets/css/bootstrap.css'>
+    <link rel='stylesheet' href='style.css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body data-spy="scroll" data-target="#navbar">
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">We Are People</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#carousel" data-target="#navbar">Home</a></li>
+                <li><a href="#chapters" data-target="#chapters">Chapters</a></li>
+                <li><a href="#about" data-target="#about">About</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Facebook Like Button</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<section class="chapter-video hero">
+	<iframe src="//player.vimeo.com/video/24970713?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="233" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+
+<section class="chapter-response">
+  <div class="row">
+  	<div class="container">
+	  	<div class="col-md-4">
+	  		<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#video-response">
+				  Submit A Video
+				</button>
+			</div>
+			<div class="col-md-4">
+	  		<button type="button " class="btn btn-default btn-block" data-toggle="collapse" data-target="#photo-response">
+				  Submit A Photo
+				</button>
+			</div>
+			<div class="col-md-4">
+	  		<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#comment-response">
+				  Submit A Comment
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="video-response" class="collapse fields">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-5">
+					<h3>Share your story in moving pictures.</h3>
+				</div>
+				<div class="col-md-7">
+					<form class="form-inline" role="form">
+					  <div class="form-group">
+					    <label class="sr-only" for="name">Your Name</label>
+					    <input type="text" class="form-control" id="url" placeholder="Your Name">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="email">Email address</label>
+					    <input type="email" class="form-control" id="url" placeholder="Email Address">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="url">Video URL</label>
+					    <input type="email" class="form-control" id="url" placeholder="Video URL">
+					  </div>
+					  <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="photo-response" class="collapse fields">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-5">
+					<h3>Snap a picture, post it here.</h3>
+				</div>
+				<div class="col-md-7">
+					<form class="form-inline" role="form">
+					  <div class="form-group">
+					    <label class="sr-only" for="name">Your Name</label>
+					    <input type="text" class="form-control" id="url" placeholder="Your Name">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="email">Email address</label>
+					    <input type="email" class="form-control" id="url" placeholder="Email Address">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="url">Video URL</label>
+					    <input type="text" class="form-control" id="url" placeholder="Video URL">
+					  </div>
+					  <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="comment-response" class="collapse fields">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-5">
+					<h3>Say something. Anything.</h3>
+				</div>
+				<div class="col-md-7">
+					<form class="form-inline" role="form">
+					  <div class="form-group">
+					    <label class="sr-only" for="name">Your Name</label>
+					    <input type="text" class="form-control" id="url" placeholder="Your Name">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="email">Email address</label>
+					    <input type="email" class="form-control" id="url" placeholder="Email Address">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="url">What Keeps You Up At Night?</label>
+					    <input type="comment" class="form-control" id="comment" placeholder="What Keeps You Up?">
+					  </div>
+					  <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="chapter-responses">
+	<div id="filters">
+		<div class="container">
+			<ul class="list-inline">
+			  <li><input type="checkbox" name="text" value=".text" id="text"><label for="text">Text</label></li>
+			  <li><input type="checkbox" name="photo" value=".photo" id="photo"><label for="photo">Photographs</label></li>
+			  <li><input type="checkbox" name="video" value=".video" id="video"><label for="video">Videos</label></li>
+			 </ul>
+		</div>
+	</div>
+
+	<div id="chapter-responses">
+	  <div class="chapter-response video"><img class="response-image" src="http://lorempixel.com/600/400/people/5/"></div>
+	  <div class="chapter-response photo"><img class="response-image" src="http://lorempixel.com/300/400/people/4/"></div>
+	  <div class="chapter-response text">
+	  	<blockquote>Lick eat the grass toss the mousie give me fish sunbathe, biting lay down in your way fluffy fur litter box biting.
+	  	<small><cite title="Posted by Dave Grohl">Dave Grohl</cite> from Warren Ohio</small>
+	  	</blockquote>
+	  </div>
+	  <div class="chapter-response photo"><img class="response-image" src="http://lorempixel.com/300/200/people/4/"></div>
+	  <div class="chapter-response photo"><img class="response-image" src="http://lorempixel.com/300/400/people/4/"></div>
+	  <div class="chapter-response video"><img class="response-image" src="http://lorempixel.com/600/400/people/5/"></div>
+	  <div class="chapter-response text">
+	  	<blockquote>Lick eat the grass toss the mousie give me fish sunbathe.
+	  	<small><cite title="Posted by Dave Grohl">Dave Grohl</cite> from Warren Ohio</small>
+	  	</blockquote>
+	  </div>
+	  <div class="chapter-response photo"><img class="response-image" src="http://lorempixel.com/300/400/people/4/"></div>
+	  <div class="chapter-response photo"><img class="response-image" src="http://lorempixel.com/300/200/people/4/"></div>
+	  <div class="chapter-response text">
+	  	<blockquote>Lick eat the grass toss the mousie give me fish sunbathe, biting lay down in your way fluffy fur litter box biting.
+	  	<small><cite title="Posted by Dave Grohl">Dave Grohl</cite> from Warren Ohio</small>
+	  	</blockquote>
+	  </div>
+	  <div class="chapter-response video"><img class="response-image" src="http://lorempixel.com/600/400/people/5/"></div>
+	  <div class="chapter-response photo"><img class="response-image" src="http://lorempixel.com/300/200/people/4/"></div>
+
+	</div>
+</section>
+
+  <footer>
+    <div class="container" id="about">
+      <div class="row text-center">
+        <div class="col-md-offset-3 col-md-6">
+          <img src="assets/images/logo-white.png" width="200px"/>
+          <p class="lead">
+            We Are People is an on-going film & photography project, divided into chapters. These chapters explore the things that connect us as people. Inside are our stories.
+          </p>
+          <a class="btn btn-default">Share Your Story</a>
+        </div>
+      </div>
+      <div class="colophon">
+        <p class="pull-right"><a href="#top" class="smooth">Back to top</a></p>
+        <p>&copy; 2013 We Are People.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--Typekit Fonts-->
+  <script type="text/javascript" src="//use.typekit.net/jna6qts.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <script src='assets/js/jquery.js'></script>
+  <script src='assets/js/bootstrap.min.js'></script>
+  <script src='assets/js/instafeed.js'></script>
+  <script src='assets/js/imagesloaded.pkgd.min.js'></script>
+  <script src='assets/js/jquery.isotope.min.js'></script>
+  <script src='assets/js/jquery.tumblr.js'></script>
+  <script src='assets/js/app.js'></script>
+
+  </body>
+</html>
