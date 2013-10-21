@@ -1,20 +1,39 @@
+$(function(){
+  
+  var $container = $('#chapter-responses'),
+      $checkboxes = $('#filters input');
+  
+  // $container.isotope({
+  //   itemSelector: '.item',
+  // });
+
+  $container.imagesLoaded( function(){
+    $container.isotope({
+      itemSelector: '.item',
+      masonry: {
+        columnWidth: 1
+      }
+    });
+  });
+  
+  $checkboxes.change(function(){
+    var filters = [];
+    // get checked checkboxes values
+    $checkboxes.filter(':checked').each(function(){
+      filters.push( this.value );
+    });
+    // ['.red', '.blue'] -> '.red, .blue'
+    filters = filters.join(', ');
+    $container.isotope({ filter: filters });
+  });
+    
+  $('#shuffle').click(function(){
+    $container.isotope('shuffle');
+  });
+  
+});
 
 $(function() {
-  // Smooth Scroll Links
-  // $('a[href*=#]:not([href=#])').click(function() {
-  //   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-  //       || location.hostname == this.hostname) {
-
-  //     var target = $(this.hash);
-  //     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  //     if (target.length) {
-  //       $('html,body').animate({
-  //         scrollTop: target.offset().top
-  //       }, 1000);
-  //       return false;
-  //     }
-  //   }
-  // });
 
   // Full height hero 
   $('#carousel, .hero iframe').css({'height':(($(window).height())-91)+'px'});
@@ -44,21 +63,22 @@ $(function() {
 
   //Tumblr Feed
   $('#tumblr')
-    .tumblr({
-      url:'http://blog.wearepeople.co',
-    });
+  .tumblr({
+    url:'http://blog.wearepeople.co',
   });
+});
 
-  var container = document.querySelector('#container');
-  var msnry;
-  // initialize Masonry after all images have loaded
-  imagesLoaded( container, function() {
-    msnry = new Masonry( container, {
-      // options
-      columnWidth: 200,
-      itemSelector: '.item'
-    }); 
-  });
+  // Masonry Stuff
+  // var container = document.querySelector('#container');
+  // var msnry;
+  // // initialize Masonry after all images have loaded
+  // imagesLoaded( container, function() {
+  //   msnry = new Masonry( container, {
+  //     // options
+  //     columnWidth: 200,
+  //     itemSelector: '.item'
+  //   }); 
+  // });
 
   // or with jQuery
   // initialize Masonry
