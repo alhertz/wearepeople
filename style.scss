@@ -227,9 +227,22 @@ h1,h2,h3,h4,h5,h6 {
     padding: 1.0em 0;
   }
   #chapter-responses {
+    padding: 2.0em;
     .chapter-response {
-      width: 25%;
       overflow: hidden;
+      &.text {
+        max-width: 20%;
+        padding: 2.0em 0;
+        blockquote {
+          border: none;
+        }
+      }
+      &.video {
+
+      }
+      &.photo {
+        
+      }
     }
   }
   /**** Isotope Filtering ****/

@@ -6,10 +6,9 @@ $(function(){
   $container.imagesLoaded( function(){
     $container.isotope({
       itemSelector: '.chapter-response',
-      // masonry: {
-      //   columnWidth: 1
-      // }
-      layoutMode : 'fitRows'
+      masonry: {
+        columnWidth: 20
+      }
     });
   });
   
